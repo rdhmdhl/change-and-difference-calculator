@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript-playground</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <div class="card__container">
+      <div class="card card--primary">
+        <header class="card__header"><h2>Percent Change Calculator</h2></header>
+        <div class="card__body">
+          <h3>Calculate the percent change between two values.</h3>
+          <div class="values grid grid--1x2">
+            <span>
+                <input href="" id="valueX" class="xValue xValue__style" placeholder="Enter old value here"></input>
+                <input href="" id="valueY" class="xValue xValue__style" placeholder="Enter new value here"></input>
+                <button id="getResults" type="button" class="results__button"> Get Results</button>
+            </span>
+            <div class="results">
+                <h3 id="finalResults"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./percentChange.js"></script>
+  </body>
+</html>
