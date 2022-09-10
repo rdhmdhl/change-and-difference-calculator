@@ -8,25 +8,54 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+<!-- percent change calculator -->
+    <div class="grid grid--1x2">
 
-    <div class="card__container">
-      <div class="card card--primary">
-        <header class="card__header"><h2>Percent Change Calculator</h2></header>
-        <div class="card__body">
-          <h3>Calculate the percent change between two values.</h3>
-          <div class="values grid grid--1x2">
-            <span>
-                <input href="" id="valueX" class="xValue xValue__style" placeholder="Enter old value here"></input>
-                <input href="" id="valueY" class="xValue xValue__style" placeholder="Enter new value here"></input>
-                <button id="getResults" type="button" class="results__button"> Get Results</button>
-            </span>
-            <div class="results">
-                <h3 id="finalResults"></h3>
+      <div class="card__container">
+        <div class="card card--primary">
+          <header class="card__header"><h2>Percent</h2>
+            <h2>Change</h2>
+            <h2>Calculator</h2></header>
+          <div class="card__body">
+            <h3>Calculate the percent change between old & new values.</h3>
+            <div class="values grid grid--1x2">
+              <span>
+                  <input href="" id="oldX" class="xValue xValue__style" placeholder="Enter OLD value here"></input>
+                  <input href="" id="newY" class="xValue xValue__style" placeholder="Enter NEW value here"></input>
+                  <button id="getChangeResults" type="button" class="results__button"> Get Results</button>
+              </span>
+              <div class="results">
+                  <h3 id="changeResults"></h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
+      <!-- percent difference calculator -->
+      <div class="card__container">
+        <div class="card card--primary">
+          <header class="card__header"><h2>Percent</h2>
+            <h2>Difference</h2>
+            <h2>Calculator</h2></header>
+          <div class="card__body">
+            <h3>Calculate the percent difference between two values.</h3>
+            <div class="values grid grid--1x2">
+              <span>
+                  <input href="" id="valueX" class="xValue xValue__style" placeholder="Enter value here"></input>
+                  <input href="" id="valueY" class="xValue xValue__style" placeholder="Enter value here"></input>
+                  <button id="getDifferenceResults" type="button" class="results__button"> Get Results</button>
+              </span>
+              <div class="results">
+                  <h3 id="differenceResults"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <script src="./percentChange.js"></script>
+    <script src="./percentDifference.js"></script>
   </body>
 </html>

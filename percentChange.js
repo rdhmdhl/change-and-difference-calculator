@@ -1,9 +1,9 @@
-document.getElementById("getResults").onclick = function() {
-    const x = document.getElementById("valueX").value;
-    const y = document.getElementById("valueY").value;
-    const results = ((((y - x) / x) * 100));
+document.getElementById("getChangeResults").onclick = function() {
+    const x = document.getElementById("oldX").value;
+    const y = document.getElementById("newY").value;
+    const changeResults = ((((y - x) / x) * 100));
 
-    document.getElementById("finalResults").innerHTML = 
-    (parseFloat(results).toFixed(2)+ "%");
+    document.getElementById("changeResults").innerHTML = 
+    (parseFloat(changeResults).toFixed(2)+ "%");
 }
 
