@@ -1,26 +1,33 @@
-
 document.getElementById("getDifferenceResults").onclick = function() {
     
-    const valueOne = document.getElementById("valueOne").value;
-    const valueTwo = document.getElementById("valueTwo").value;
-    // valueOne = 1;
-    // valueTwo = 2;
+    let valueOne = document.getElementById("valueOne").value;
+        if (valueOne.includes('$')){
+            const firstCharOne = valueOne[0];
 
-    const topValue = (parseFloat(valueOne) - parseFloat(valueTwo));
+            const replaceValueOneDollarSign = valueOne.replace(firstCharOne, '');
+
+            valueOne = parseFloat(replaceValueOneDollarSign);
+        }
 
 
-    const bottomValue = ((parseFloat(valueOne) + parseFloat(valueTwo)) / 2);
+    let valueTwo = document.getElementById("valueTwo").value;
+        if(valueTwo.includes('$')){
+            const firstCharTwo = valueTwo[0]
+
+            const replaceValueTwoDollarSign = valueTwo.replace(firstCharTwo, '');
+
+            valueTwo = parseFloat(replaceValueTwoDollarSign);
+        }
+        
  
 
+    const topValue = (valueOne) - (valueTwo);
+
+    const bottomValue = ((valueOne) + (valueTwo)) / 2;
+ 
     const differenceResults = Math.abs((topValue / bottomValue) * 100);
-
-
 
     document.getElementById("insertDifferenceResults").innerHTML = 
     (parseFloat(differenceResults).toFixed(2)+ "%");
-
-    console.log(valueOne, valueTwo);
-    console.log(topValue, bottomValue);
-    console.log(differenceResults);
 }
 
