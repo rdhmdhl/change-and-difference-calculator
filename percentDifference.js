@@ -1,31 +1,27 @@
 document.getElementById("getDifferenceResults").onclick = function() {
     
     let valueOne = document.getElementById("valueOne").value;
-        if (valueOne.includes('$')){
-            const firstCharOne = valueOne[0];
-
-            const replaceValueOneDollarSign = valueOne.replace(firstCharOne, '');
-
-            valueOne = parseFloat(replaceValueOneDollarSign);
-        }
-
+        // remove $ % and , characters
+        valueOne = valueOne.replace(/\$/g, '');
+        valueOne = valueOne.replace(/%/g, '');
+        valueOne = valueOne.replace(/,/g, '');
+        console.log(valueOne);
 
     let valueTwo = document.getElementById("valueTwo").value;
-        if(valueTwo.includes('$')){
-            const firstCharTwo = valueTwo[0]
-
-            const replaceValueTwoDollarSign = valueTwo.replace(firstCharTwo, '');
-
-            valueTwo = parseFloat(replaceValueTwoDollarSign);
-        }
-        
- 
+        // remove $ % and , characters
+        valueTwo = valueTwo.replace(/\$/g, '');
+        valueTwo = valueTwo.replace(/%/g, '');
+        valueTwo = valueTwo.replace(/,/g, '');
+        console.log(valueTwo);
 
     const topValue = (valueOne) - (valueTwo);
+        // console.log("the top value is", topValue);
 
-    const bottomValue = ((valueOne) + (valueTwo)) / 2;
+    let bottomValue = (parseFloat(valueOne) + parseFloat(valueTwo)) / 2;
+        // console.log("the bottom value is", bottomValue);
  
-    const differenceResults = Math.abs((topValue / bottomValue) * 100);
+    const differenceResults = (topValue / bottomValue) * 100;
+        // console.log("the results are", differenceResults + "%");
 
     document.getElementById("insertDifferenceResults").innerHTML = 
     (parseFloat(differenceResults).toFixed(2)+ "%");

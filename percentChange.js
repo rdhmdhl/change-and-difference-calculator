@@ -1,23 +1,16 @@
 document.getElementById("getChangeResults").onclick = function() {
     let x = document.getElementById("oldX").value;
-        if (x.includes('$')){
-            const firstXChar = x[0];
-
-            const replaceXDollar = x.replace(firstXChar, '');
-            // parseFloat() wont work with a symbol as the first character
-            x = parseFloat(replaceXDollar);
-        }
-    
+    // remove $ % and , characters
+        x = x.replace(/\$/g, '');
+        x = x.replace(/%/g, '');
+        x = x.replace(/,/g, '');
 
 
     let y = document.getElementById("newY").value;
-        if (y.includes('$')){
-            const firstYChar = y[0];
-
-            const replaceYDollar = y.replace(firstYChar, '');
-
-            y = parseFloat(replaceYDollar);
-        }
+    // remove $ % and , characters
+        y = y.replace(/\$/g, '');
+        y = y.replace(/%/g, '');
+        y = y.replace(/,/g, '');
 
 
     console.log(x,y);
