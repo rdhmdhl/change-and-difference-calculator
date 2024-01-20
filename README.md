@@ -8,5 +8,5 @@ Calculating the percent change between two values is a common task in reporting,
 To use this, go [here](https://mindgruve-search-calculator.netlify.app/) :)
 
 - **Responsive Layout**: Whether you're on a desktop, a tablet, or a smartphone, the calculator is fully responsive, guaranteeing a seamless experience across all devices.
-- **Intuitive Interface**: The calculator is designed for ease of use. Input your values on the desired calculatorm and get your results in an instant.
+- **Intuitive Interface**: The calculator is designed for ease of use. Input your values on the desired calculator and get your results in an instant.
 - **Flexible Input Handling**: Whether your numbers are formatted with dollar signs, percentage symbols, or as plain numbers, the calculator intelligently recognizes and processes the input. This means you can enter values in the format you have them, without the need for tedious conversions.
