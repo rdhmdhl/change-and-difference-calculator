@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mediahub Calculators</title>
+    <title>MindgruveMacarta Calculators</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
@@ -86,8 +86,70 @@
         </div>
       </div>
     </div>
+    <!-- Spend Increase Calculator -->
+    <div class="card__container bottom">
+      <div class="card card--primary" data-aos="fade-left">
+        <header class="card__header">
+          <h2>Spend</h2>
+          <h2>Increase</h2>
+          <h2>Calculator</h2>
+        </header>
+        <div class="card__body">
+          <h3>Calculate the amount you could have spent durring a timeframe. </h3>
+          <div class="values grid grid--1x2">
+            <span>
+              <input
+                id="spend"
+                class="xValue_wide xValue__style"
+                placeholder="Enter spend"
+              />
+              <input
+              id="average_cpc"
+              class="xValue_wide xValue__style"
+              placeholder="Enter average CPCs"
+              />
+              <input
+              id="average_ctr"
+              class="xValue_wide xValue__style"
+              placeholder="Enter CTR"
+              />
+              <input
+                id="impressions"
+                class="xValue_wide xValue__style"
+                placeholder="Enter impressions"
+              />
+              <input
+                id="impression_share"
+                class="xValue_wide xValue__style"
+                placeholder="Enter impression share"
+              />
+              <input
+                id="impression_share_lost_budget"
+                class="xValue_wide xValue__style"
+                placeholder="Enter impr. share lost (budget)"
+              />
+              <button
+                id="getIncreasedSpendResults"
+                type="button"
+                class="results__button"
+              >
+                Get Results
+              </button>
+            </span>
+            <div class="resultsSpend">
+              <h3 id="insertIncreasedSpendImpressions"></h3>
+              <h3 id="insertTotalImpressionsLost"></h3>
+              <h3 id="insertAddititionalClicks"></h3>
+              <h3 id="insertIncreasedSpendResults"></h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="./percentChange.js"></script>
     <script src="./percentDifference.js"></script>
+    <script src="./spendIncrease.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
