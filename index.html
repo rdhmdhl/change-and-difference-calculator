@@ -86,70 +86,105 @@
         </div>
       </div>
     </div>
-    <!-- Spend Increase Calculator -->
-    <div class="card__container bottom">
-      <div class="card card--primary" data-aos="fade-left">
-        <header class="card__header">
-          <h2>Spend</h2>
-          <h2>Increase</h2>
-          <h2>Calculator</h2>
-        </header>
-        <div class="card__body">
-          <h3>Calculate the amount you could have spent during a timeframe. </h3>
-          <div class="values grid grid--1x2">
-            <span>
-              <input
-                id="spend"
+    <div class="grid grid--1x2">
+      <!-- Spend Increase Calculator -->
+      <div class="card__container bottom">
+        <div class="card card--primary" data-aos="fade-left">
+          <header class="card__header">
+            <h2>Spend</h2>
+            <h2>Increase</h2>
+            <h2>Calculator</h2>
+          </header>
+          <div class="card__body">
+            <h3>Calculate the amount you could have spent during a timeframe. </h3>
+            <div class="values grid grid--1x2">
+              <span>
+                <input
+                  id="spend"
+                  class="xValue_wide xValue__style"
+                  placeholder="Enter spend"
+                />
+                <input
+                id="average_cpc"
                 class="xValue_wide xValue__style"
-                placeholder="Enter spend"
-              />
-              <input
-              id="average_cpc"
-              class="xValue_wide xValue__style"
-              placeholder="Enter average CPCs"
-              />
-              <input
-              id="average_ctr"
-              class="xValue_wide xValue__style"
-              placeholder="Enter CTR"
-              />
-              <input
-                id="impressions"
+                placeholder="Enter average CPCs"
+                />
+                <input
+                id="average_ctr"
                 class="xValue_wide xValue__style"
-                placeholder="Enter impressions"
-              />
-              <input
-                id="impression_share"
-                class="xValue_wide xValue__style"
-                placeholder="Enter impression share"
-              />
-              <input
-                id="impression_share_lost_budget"
-                class="xValue_wide xValue__style"
-                placeholder="Enter impr. share lost (budget)"
-              />
-              <button
-                id="getIncreasedSpendResults"
-                type="button"
-                class="results__button"
-              >
-                Get Results
-              </button>
-            </span>
-            <div class="resultsSpend">
-              <h3 id="insertIncreasedSpendImpressions"></h3>
-              <h3 id="insertTotalImpressionsLost"></h3>
-              <h3 id="insertAddititionalClicks"></h3>
-              <h3 id="insertIncreasedSpendResults"></h3>
+                placeholder="Enter CTR"
+                />
+                <input
+                  id="impressions"
+                  class="xValue_wide xValue__style"
+                  placeholder="Enter impressions"
+                />
+                <input
+                  id="impression_share"
+                  class="xValue_wide xValue__style"
+                  placeholder="Enter impression share"
+                />
+                <input
+                  id="impression_share_lost_budget"
+                  class="xValue_wide xValue__style"
+                  placeholder="Enter impr. share lost (budget)"
+                />
+                <button
+                  id="getIncreasedSpendResults"
+                  type="button"
+                  class="results__button"
+                >
+                  Get Results
+                </button>
+              </span>
+              <div class="resultsSpend">
+                <h3 id="insertIncreasedSpendImpressions"></h3>
+                <h3 id="insertTotalImpressionsLost"></h3>
+                <h3 id="insertAddititionalClicks"></h3>
+                <h3 id="insertIncreasedSpendResults"></h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="card__container bottom">
+        <div class="card card--primary" data-aos="fade-left">
+          <header class="card__header">
+            <h2>Year Complete</h2>
+            <h2>Percentage</h2>
+            <h2>Calculator</h2>
+          </header>
+          <div class="card__body">
+            <h3>Find the completed year percentage.</h3>
+            <div class="start-year-container">
+              <h4>From:</h4>
+              <input type="number" id="year" min="1900" max="2100" value="2024">
+            </div>
+            
+            <div class="end-date-container">
+              <h4>To:</h4>
+              <input type="date" id="end-date">
+            </div>
+
+            <button 
+              id="getYearComplete"
+              type="button"
+              class="results__button">
+              Get Results
+            </button>
+
+            <div class="results" id="dateCompleteResults">
+              <h3 id="insertdateCompleteResults"></h3>
+            </div>
+          </div>
+      </div>
     </div>
-  </div>
+
+    </div>
     <script src="./percentChange.js"></script>
     <script src="./percentDifference.js"></script>
     <script src="./spendIncrease.js"></script>
+    <script src="./yearComplete.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

@@ -78,6 +78,14 @@ h3{
 
 /* entrys and results */
 
+input {
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #dfdee5;
+    outline: none;
+    padding: .25rem;
+}
+
 .values .xValue{
     display: flex;
     width: 12rem;
@@ -93,7 +101,7 @@ h3{
 
 .xValue__style{
     margin: 0 0 1rem 0;
-    background: #dfdee5;;
+    background: #dfdee5;
     justify-self: center;
     padding: 0 1rem;
     border: none;
@@ -152,6 +160,10 @@ h3{
 
 .bottom{
     margin-bottom: 4rem;
+}
+
+.end-date-container{
+    margin: 2rem 0;
 }
 
 /* phones */
