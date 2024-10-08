@@ -94,7 +94,7 @@ input {
 }
 .values .xValue_wide{
     display: flex;
-    width: 25rem;
+    width: 16rem;
     height: 2rem;
     align-items: center;
 }
@@ -151,11 +151,17 @@ input {
     display: flex;
     flex-direction: column;
     border: none;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
     color:  var(--color-primary);
     font-family: var(--font-primary);
+}
+
+.resultsSpend h3{
+    font-size: 1rem;
 }
 
 .yearCompleteResults{
@@ -191,6 +197,7 @@ input {
     .resultsSpend{
         margin-top: 2rem;
         display: block;
+        font-size: 1rem;
     }
     .values .xValue_wide{
         display: flex;
